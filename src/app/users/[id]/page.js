@@ -1,8 +1,8 @@
 import React from "react";
-
+import Image from "next/image";
 
 async function getUsersDetails(id) {
-    const resp = await fetch(`https://api.escuelajs.co/api/v1/users/${id}`)
+    const resp = await fetch(`https://api.escuelajs.co/api/v1/users/${id}`,{cache:"no-store"})
     return resp.json();
 }
 export function generateMetadata({ params }) {
@@ -33,7 +33,7 @@ export default async function UsersDetails({ params }) {
         <main className="flex  flex-wrap items-center justify-around p-24 rounded-lg bg-gray-700 h-screen">
 
             <div>
-                <img
+                <Image
                     class=" rounded-t-lg object-cover md:h-max md:w-61 md:rounded-none md:rounded-l-lg"
                     src={users.avatar}
                     alt="" />

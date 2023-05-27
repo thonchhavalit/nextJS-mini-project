@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export default function UserCard({ avatar, name, role, id }) {
@@ -17,7 +18,7 @@ export default function UserCard({ avatar, name, role, id }) {
             <li class="py-3 sm:py-4">
               <div class="flex items-center space-x-4">
                 <Link class="flex-shrink-0" href={`users/${id}`}>
-                  <img class="w-8 h-8 rounded-full" src={avatar} alt="Neil image" />
+                  <Image class="w-8 h-8 rounded-full" src={avatar} alt="Neil image" />
                 </Link>
                 <div class="flex-1 min-w-0">
                   <p class="text-sm font-medium text-gray-900 truncate dark:text-white">

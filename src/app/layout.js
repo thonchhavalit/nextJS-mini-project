@@ -11,7 +11,6 @@ export default function RootLayout({ children }) {
         <NavBar />
         {children}
         <Footer />
-        <script src="https://cdn.tailwindcss.com"></script>
         </body>
     </html>
   )

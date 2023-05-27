@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import Image from 'next/image'
 export async function getCategories(id) {
-    const resp = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`)
+    const resp = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`,{cache:"no-store"})
     return resp.json()
 }
 
@@ -33,7 +34,7 @@ export default async function CategoriesDetail({ params }) {
         <div className="flex min-h-screen flex-col items-center justify-center   ">
             <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <img className="p-8 rounded-t-lg" src={category.image} alt="product image" />
+                    <Image className="p-8 rounded-t-lg" src={category.image} alt="product image" />
                 </a>
                 <div className="px-5 pb-5">
                     <a href="#">
