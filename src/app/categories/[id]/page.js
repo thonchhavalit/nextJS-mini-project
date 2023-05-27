@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Image from 'next/image'
 export async function getCategories(id) {
     const resp = await fetch(`https://api.escuelajs.co/api/v1/categories/${id}`,{cache:"no-store"})
     return resp.json()
