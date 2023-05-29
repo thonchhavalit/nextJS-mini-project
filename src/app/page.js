@@ -3,8 +3,6 @@ import Categories from "./categories/page";
 import Products from "./products/page";
 import Users from "./users/page";
 import Loading from "./loading";
-import Image from "next/image";
-import {shoe} from "../app/images/shoe.png";
 export const metadata ={
   title: "VALIT SHOP",
   description: "make confidence with us",
@@ -47,7 +45,7 @@ export default async function Home() {
                   <div class="hidden relative md:block lg:w-7/12">
                     <div aria-hidden="true" class="absolute inset-0 m-auto rounded-full w-96 h-96 bg-yellow-200">
                     </div>
-                    <Image src={shoe} className="relative ml-auto  " alt="" width={200} height={200} />
+                    <img src="https://i.pinimg.com/originals/62/a6/a9/62a6a9e51dd163a4298beed5e88ee841.png" className="relative ml-auto  " alt="" />
                   </div>
                 </div>
               </div>

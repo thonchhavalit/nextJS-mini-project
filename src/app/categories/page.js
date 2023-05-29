@@ -1,6 +1,4 @@
-import { Suspense } from "react"
 import CategoryCard from "../components/CategoryCard"
-import Loading from "../loading"
 //request categories
 export async function getCategories() {
     const resp = await fetch(" https://api.escuelajs.co/api/v1/categories")

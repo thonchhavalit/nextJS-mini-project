@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
 async function getProductDetails(id) {
-    const resp = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`, {cache:"no-store"})
+    const resp = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`, { cache: "no-store" })
     return resp.json();
 }
 
@@ -33,9 +32,11 @@ export default async function ProductDetails({ params }) {
     return (
         <main className="flex  flex-wrap items-center justify-around p-24 rounded-lg bg-gray-700 h-screen">
             <div>
-                <Image
+                <img
                     class=" rounded-t-lg object-cover md:h-max md:w-61  rounded-l-lg"
                     src={products.images}
+                    // width={500}
+                    // height={500}
                     alt="" />
             </div>
             <div>

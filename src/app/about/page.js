@@ -1,11 +1,12 @@
 import React from 'react'
-import Image from 'next/image'
 
 export default function About() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-center p-24 w-full ' >
       <div class="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-blue-600 rounded-xl bg-gradient-to-r from-blue-800 to-indigo-900">
-        <Image class="object-cover w-72 h-72 rounded-full ring-4 ring-gray-300" src="https://scontent.fpnh24-1.fna.fbcdn.net/v/t39.30808-6/278258723_957561528457645_5718717344593152768_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJjgizBQ2rDPOUUr1BKaExzAgSp12D7s3MCBKnXYPuzdEkM0LSxwrS1BWhyJuG7QgZ0wlfMhhICDDMqqdfkD68&_nc_ohc=lKWn_YDY_IIAX_0bpNl&_nc_ht=scontent.fpnh24-1.fna&oh=00_AfB6-6HYC7z3uppNnpfRx4S6fiDoG31tU2Rds4p5AsH-vA&oe=6476E9AB" alt="" />
+        <img class="object-cover w-72 h-72 rounded-full ring-4 ring-gray-300" 
+        
+        src="https://scontent.fpnh24-1.fna.fbcdn.net/v/t39.30808-6/278258723_957561528457645_5718717344593152768_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJjgizBQ2rDPOUUr1BKaExzAgSp12D7s3MCBKnXYPuzdEkM0LSxwrS1BWhyJuG7QgZ0wlfMhhICDDMqqdfkD68&_nc_ohc=lKWn_YDY_IIAX_0bpNl&_nc_ht=scontent.fpnh24-1.fna&oh=00_AfB6-6HYC7z3uppNnpfRx4S6fiDoG31tU2Rds4p5AsH-vA&oe=6476E9AB" alt="" />
 
         <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">Thon Chhavalit</h1>
 

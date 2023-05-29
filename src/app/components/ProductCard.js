@@ -1,16 +1,17 @@
 'use client'
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
 export default function ProductCard({ title, image, price, id, category }) {
   return (
-    
+
     <div className="shrink-0 my-2 w-full max-w-sm bg-gradient-to-r from-blue-800 to-indigo-900 rounded-xl" >
       <Link href={`/products/${id}`} >
-        <Image 
+        <img
           className="p-8 rounded-t-lg w-96 h-96 m-auto "
           src={image ? image : "https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/cupertino_activity_indicator_square_large.gif?raw=true"}
           alt="product image"
+          // width={500}
+          // height={500}
         />
       </Link>
       <div className="px-5 pb-5">
